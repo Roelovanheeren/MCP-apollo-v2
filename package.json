@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc",
     "start": "node dist/index.js",
-    "start:sse": "node verify.js & AUTH_SERVER_URL=http://127.0.0.1:9090/verify PORT=$PORT mcp-proxy-auth node dist/index.js",
+    "start:sse": "node verify.js & AUTH_SERVER_URL=http://127.0.0.1:9090/verify PORT=$PORT npx mcp-proxy node dist/index.js",
     "dev": "tsx --watch src/index.ts",
     "stdio": "node dist/index.js"
   },

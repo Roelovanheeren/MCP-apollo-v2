@@ -23,4 +23,4 @@ RUN npm ci --ignore-scripts --omit-dev
 
 EXPOSE 8080
 
-CMD ["sh", "-c", "node verify.js & AUTH_SERVER_URL=http://127.0.0.1:9090/verify PORT=${PORT:-8080} ./node_modules/.bin/mcp-proxy-auth node dist/index.js"]
+CMD ["sh", "-c", "node verify.js & AUTH_SERVER_URL=http://127.0.0.1:9090/verify PORT=${PORT:-8080} npx mcp-proxy node dist/index.js"]
